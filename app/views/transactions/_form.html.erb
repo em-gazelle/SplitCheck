@@ -23,6 +23,10 @@
   other people.
   </br>
 
+  The friend I'd like to charge can be found through zer phone number: <%= f.text_field :phone_number_charged %>.
+  </br>
+  Please keep this transaction <%= f.select(:audience, ["private", "public"]) %>.
+
   <div class="actions">
     <%= f.submit "Charge my friends!"%>
   </div>

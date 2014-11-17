@@ -10,12 +10,9 @@
       <th>Post tip</th>
       <th>Friends Owe: </th>
       <th colspan="3"></th>
-    </tr>
       <th>Phone#OfFriendCharged:</th>
-      <th>Access Token:</th>
+<!--       <th>Access Token:</th> -->
       <th>Audience:</th>
-    <tr>
-
     </tr>
   </thead>
 
@@ -32,11 +29,9 @@
         <td><%= link_to 'Show', transaction %></td>
         <td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
         <td><%= link_to 'Destroy', transaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <tr>
-        <td>---15258887623 <%#= @transaction.%></td>
-        <td>---blahblah <%#= @transaction.%></td>      
-        <td>---private/etc <%#= @transaction.%></td>
+        <td>--- <%= transaction.phone_number_charged %></td>
+<!--         <td>---blahblah <%#= transaction.%></td>       -->
+        <td>--- <%= transaction.audience %></td>
       </tr>
     <% end %>
   </tbody>

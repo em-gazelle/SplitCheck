@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106201853) do
+ActiveRecord::Schema.define(version: 20141117072739) do
 
   create_table "transactions", force: true do |t|
     t.integer  "pre_tip_cost"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20141106201853) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "individual_contribution"
+    t.string   "audience"
+    t.string   "phone_number_charged"
   end
 
 end
