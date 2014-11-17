@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pre_tip_cost: 1
+  note: MyString
+  number_splitting: 1
+  tip_percentage: 1
+  post_tip: 1
+
+two:
+  pre_tip_cost: 1
+  note: MyString
+  number_splitting: 1
+  tip_percentage: 1
+  post_tip: 1

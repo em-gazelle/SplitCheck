@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+
+Hi friends! The "<%= @transaction.note %>" was <%= (@transaction.post_tip/100) %> after a <%= @transaction.tip_percentage %>% tip. 
+</br>
+</br>
+Each friend will need to pay $<%= (@transaction.individual_contribution/100) %>.
+
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
